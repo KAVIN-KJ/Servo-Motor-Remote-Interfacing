@@ -2,20 +2,38 @@
   font-family: sans-serif;
 }
 
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+}
+
 .buttons{
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 .buttons button{
-  font-size: 20px;
+  font-size: 35px;
   padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 10px black;
+  justify-content: center;
   border: none;
-  background-color: blueviolet;
+  background-color: black;
+
   color: white;
 }
 .heading{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
 }
 .status{

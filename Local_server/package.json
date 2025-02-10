@@ -11,6 +11,7 @@
     "start": "nodemon server.js"
   },
   "dependencies": {
+    "@serialport/parser-readline": "^13.0.0",
     "axios": "^1.7.9",
     "cors": "^2.8.5",
     "express": "^4.21.2",
