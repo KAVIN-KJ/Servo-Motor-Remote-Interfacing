@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const BASE_URL = "https://arduino-interfacing.onrender.com"; // Replace with your actual Render server URL
+const BASE_URL = "https://arduino-interfacing.onrender.com";
 
 export default function ServoControl() {
   const [status, setStatus] = useState("Waiting for command...");

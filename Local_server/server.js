@@ -4,9 +4,9 @@ const SerialPort = require("serialport");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000; // Local server port
-const REMOTE_SERVER_URL = "https://arduino-interfacing.onrender.com"; // Replace with actual Render URL
-const ARDUINO_PORT = "/dev/ttyUSB0"; // Change based on your setup
+const PORT = 5000;
+const REMOTE_SERVER_URL = "https://arduino-interfacing.onrender.com";
+const ARDUINO_PORT = "/dev/ttyUSB0";
 const BAUD_RATE = 115200;
 
 app.use(cors());
@@ -37,10 +37,10 @@ const pollRemoteServer = async () => {
             sendCommandToArduino(command);
         }
     } catch (error) {
-        console.error("❌ Error fetching command from remote server:", error);
+        console.error("Error fetching command from remote server:", error);
     }
 };
 
-setInterval(pollRemoteServer, 1000); // Poll every second
+setInterval(pollRemoteServer, 1000);
 
 app.listen(PORT, () => console.log(`🚀 Local server running on http://localhost:${PORT}`));
