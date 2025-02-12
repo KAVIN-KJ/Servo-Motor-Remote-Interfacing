@@ -12,6 +12,8 @@ This project enables **remote control of a servo motor** and **real-time distanc
 6️⃣ **Arduino reads distance data** from the ultrasonic sensor.  
 7️⃣ **Local Server posts distance to Remote Server**.  
 8️⃣ **Frontend fetches distance data** from Remote Server and displays it.
+## 💻 Project Demo 
+https://github.com/user-attachments/assets/806faba8-b9e6-4c18-8b50-65d331940901
 
 ## 📁 Project Structure
 ```
@@ -43,6 +45,9 @@ cd RemoteServer
 npm install
 ```
 #### 🔹 Local Server
+
+
+
 ```sh
 cd ../Local_server
 npm install
