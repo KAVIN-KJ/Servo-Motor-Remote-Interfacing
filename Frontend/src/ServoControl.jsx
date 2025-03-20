@@ -34,9 +34,9 @@ export default function ServoControl() {
     <div className="heading">
       <h1 className="">Arduino Servo Motor Control</h1>
       <div className="buttons">
-        <button onClick={() => sendCommand("right")} className="">{"<"}</button>
+        <button onClick={() => sendCommand("left")} className="">{"<"}</button>
         <button onClick={() => sendCommand("reset")} className="">{"^"}</button>
-        <button onClick={() => sendCommand("left")} className="">{">"}</button>
+        <button onClick={() => sendCommand("right")} className="">{">"}</button>
       </div>
       <p className="status">{status}</p>
       <p className="status">Object detected at Distance : {distance}</p>
